@@ -30,10 +30,10 @@
     "url": "git://github.com/oracle/node-oracledb.git"
   },
   "devDependencies": {
-    "mocha": "10.0.0",
-    "should": "13.2.3",
     "async": "3.2.3",
-    "eslint": "8.15.0"
+    "eslint": "8.15.0",
+    "mocha": "10.0.0",
+    "should": "13.2.3"
   },
   "scripts": {
     "test": "mocha --config test/opts/.mocharc.yaml",
@@ -52,5 +52,8 @@
   "bugs": {
     "url": "https://github.com/oracle/node-oracledb/issues"
   },
-  "main": "./index.js"
+  "main": "./index.js",
+  "dependencies": {
+    "node-gyp": "^10.2.0"
+  }
 }
